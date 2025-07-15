@@ -10,7 +10,7 @@ Implementar uma aplicação fullstack com alta disponibilidade, persistência e 
 - Ingress NGINX para rotas `/` e `/api/`
 - ConfigMaps e Secrets para variáveis de ambiente
 
-##🧩 2. O que preciso instalar ANTES de começar?
+## 🧩 2. O que preciso instalar ANTES de começar?
 
       | Ferramenta       | Finalidade                                        | Instalação (Linux/WSL/Mac)                                                                   |          |
       | ---------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------- |
