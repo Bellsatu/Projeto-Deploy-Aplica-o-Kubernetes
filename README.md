@@ -10,6 +10,30 @@ Implementar uma aplicação fullstack com alta disponibilidade, persistência e 
 - Ingress NGINX para rotas `/` e `/api/`
 - ConfigMaps e Secrets para variáveis de ambiente
 
+# Estrutura
+  projeto-k8s-deploy/
+│
+├── namespace.yaml
+├── ingress/
+│   └── ingress.yaml
+│
+├── database/
+│   ├── pvc.yaml
+│   ├── secret.yaml
+│   └── statefulset.yaml
+│
+├── backend/
+│   ├── configmap.yaml
+│   ├── deployment.yaml
+│   └── Dockerfile
+│
+├── frontend/
+│   ├── deployment.yaml
+│   └── Dockerfile
+│
+└── README.md
+
+
 ## Como rodar
 1. Clonar o repositório:
 ```bash  
