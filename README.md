@@ -10,6 +10,18 @@ Implementar uma aplicação fullstack com alta disponibilidade, persistência e 
 - Ingress NGINX para rotas `/` e `/api/`
 - ConfigMaps e Secrets para variáveis de ambiente
 
+##🧩 2. O que preciso instalar ANTES de começar?
+
+      | Ferramenta       | Finalidade                                        | Instalação (Linux/WSL/Mac)                                                                   |          |
+      | ---------------- | ------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------- |
+      | Docker           | Para construir e subir imagens das apps           | [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)                   |          |
+      | Minikube ou Kind | Para rodar o cluster Kubernetes localmente        | [https://minikube.sigs.k8s.io/docs/start/](https://minikube.sigs.k8s.io/docs/start/)         |          |
+      | kubectl          | Para interagir com o cluster Kubernetes           | `sudo apt install kubectl` ou veja o [site oficial](https://kubernetes.io/docs/tasks/tools/) |          |
+      | Git              | Para versionar e subir o projeto no GitHub        | `sudo apt install git`                                                                       |          |
+      | base64           | Para codificar secrets do banco (já vem no Linux) | \`echo -n 'valor'                                                                            | base64\` |
+
+  
+
 # Estrutura
       projeto-k8s-deploy/
       │
