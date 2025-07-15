@@ -1,5 +1,5 @@
 # Projeto-Deploy-Aplica-o-Kubernetes
-
+**rascunho**
 ## Objetivo
 Implementar uma aplicação fullstack com alta disponibilidade, persistência e acesso externo via Ingress, usando Kubernetes.
 
