@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-frontend
+  namespace: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react-frontend
+  template:
+    metadata:
+      labels:
+        app: react-frontend
+    spec:
+      containers:
+      - name: react-frontend
+        image: amelus99/frontend:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: VITE_API_URL
+          value: "/api"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-frontend
+  namespace: app
+spec:
+  selector:
+    app: react-frontend
+  ports:
+    - port: 80
+      targetPort: 80
+  type: ClusterIP
